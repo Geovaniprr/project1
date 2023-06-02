@@ -1,0 +1,66 @@
+h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #1D1D1D;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.geral{
+    color: white;
+}
+
+.password-container {
+    position: relative;
+}
+
+.general{
+    padding-right: 2.5em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.geral input[type="text"]{
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 194px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("https://img.uxwing.com/wp-content/themes/uxwing/download/health-sickness-organs/eye-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.general input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1fdf64;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

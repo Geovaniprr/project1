@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Faça Login</h1><br><br>
+        <form method="post" action="login.php">
+            <div class="geral">
+                <label for="email">E-mail ou nome de usuário</label><br>
+                <input type="text" name="email" required placeholder="E-mail ou nome de usuário">
+            </div><br>
+            <script>
+                function togglePasswordVisibility() {
+                    var passwordInput = document.getElementById("senha");
+                    var passwordToggle = document.getElementById("password-toggle");
+                    
+                    if (passwordInput.type === "password") {
+                        passwordInput.type = "text";
+                        passwordToggle.style.backgroundImage = "url('https://img.uxwing.com/wp-content/themes/uxwing/download/health-sickness-organs/eye-icon.svg')";
+                    } else {
+                        passwordInput.type = "password";
+                        passwordToggle.style.backgroundImage = "url('https://img.uxwing.com/wp-content/themes/uxwing/download/health-sickness-organs/eye-icon.svg')";
+                    }
+                }
+            </script>
+            <div class="general">
+                <label for="senha">Senha</label>
+                <div class="password-container">
+                    <input type="password" id="senha" name="senha" required placeholder="Senha">
+                    <button type="button" id="password-toggle" onclick="togglePasswordVisibility()" class="password-toggle"></button>
+                </div>
+                <div><br>
+                    <input type="submit" name="submit" value="Login">
+                </div>
+                <div><br><br>
+                    <button type="button" name="button1">Esqueceu a senha?</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
